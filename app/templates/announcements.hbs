@@ -2,8 +2,8 @@
 <p>Here we will keep you updating on things happening at Space Rentals!</p>
 <ul>
   {{#each model as |announcement|}}
-    {{announcement-tile announcement=announcement}}
+    <li>{{announcement-tile announcement=announcement}}</li>
   {{/each}}
 </ul>
 
-{{new-announcement save2="save3"}}
+{{new-announcement save2Announcements="save3Announcements"}}
