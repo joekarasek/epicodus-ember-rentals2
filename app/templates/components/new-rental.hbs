@@ -1,6 +1,5 @@
 {{#if addNewRental}}
   <h1>New Rental</h1>
-  <div>
     <form>
       <div class="form-group">
         <label for="owner">Owner</label>
@@ -29,7 +28,6 @@
 
       <button {{action 'save1'}}>Save</button> <!--This is the start to our Action up, this click starts the process of saving the new rental to the data base. -->
     </form>
-  </div>
 {{else}}
   <button {{action 'rentalFormShow'}}>New Rental</button>
 {{/if}}
