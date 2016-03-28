@@ -1,15 +1,17 @@
-<h1> Welcome to Super Rentals </h1>
+<div class="container">
+  <h1> Welcome to Super Rentals </h1>
 
-We hope you find exactly what you're looking for in a place to stay.
+  We hope you find exactly what you're looking for in a place to stay.
 
-<ul>
-  {{#each model as |rental|}}
-    <li>{{rental-tile rental=rental destroyRental="destroyRental"}}</li>
-  {{/each}}
-</ul>
+  <ul class="rental-listings">
+    {{#each model as |rental|}}
+      <li>{{rental-tile rental=rental destroyRental="destroyRental"}}</li>
+    {{/each}}
+  </ul>
 
-{{new-rental save2="save3"}}
+  {{new-rental save2="save3"}} <!-- We are creating a variable (save3) with the value of save2 and passing it up to the route/filename.js (in this case, index.js)-->
 
-{{#link-to 'about'}}About{{/link-to}} |
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}} | 
-{{#link-to 'announcements'}}View Important Announcements!{{/link-to}}
+  {{#link-to 'about'}}About{{/link-to}} |
+  {{#link-to 'contact'}}Click here to contact us.{{/link-to}} |
+  {{#link-to 'announcements'}}View Important Announcements!{{/link-to}}
+</div>

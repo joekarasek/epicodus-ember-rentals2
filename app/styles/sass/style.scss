@@ -1,0 +1,81 @@
+body {
+  background-color: lighten(aqua, 35%);
+  font-family: 'Lora', serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+// ······· Home ·······
+
+.rental-listings {
+  display: flex;
+  // flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.rental-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: 1px solid pink;
+  padding: 0.9rem;
+  flex: 1 1 30%;
+  height: 300px;
+  margin: auto 1em;
+  .rental-title {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+  }
+  img {
+    max-width: 100%;
+    max-height: 80%;
+  }
+  .rentalBtns {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    .btn-show-image {
+      background-color: #62C370;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      color: white;
+      padding: 0.5rem;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        // background-color: lighten(#62C370, 10%);
+        border-radius: 0;
+        cursor: pointer;
+      }
+    }
+    .btn-delete-tile {
+      background-color: #CC3363;
+      border: none;
+      border-radius: 0 8px 8px 0;
+      color: white;
+      padding: 0.5rem;
+      transition: all 0.1s ease-in-out;
+      &:hover {
+        // background-color: lighten(#CC3363, 10%);
+        border-radius: 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
+// ······· About ·······
+
+// ······· Contact ·······
+
+// ······· Announcements ·······

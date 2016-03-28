@@ -2,8 +2,12 @@
 <p>Here we will keep you updating on things happening at Space Rentals!</p>
 <ul>
   {{#each model as |announcement|}}
-    <li>{{announcement-tile announcement=announcement}}</li>
+    <li>{{announcement-tile announcement=announcement destroyAnnouncement="destroyAnnouncement"}}</li>
   {{/each}}
 </ul>
 
 {{new-announcement save2Announcements="save3Announcements"}}
+
+{{#link-to 'index'}}Home{{/link-to}}
+{{#link-to 'about'}}About{{/link-to}} |
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}} |

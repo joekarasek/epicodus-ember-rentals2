@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     rentalFormShow() {
       this.set('addNewRental', true);
     },
-    save1() {
+    save1() { //This is the second step in our Action-up that saves the parameters below. It came from the button click in the new-rental.hbs.
       var params = {
         owner: this.get('owner'),
         city: this.get('city'),
@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         bedrooms: this.get('bedrooms')
       };
       this.set('addNewRental', false),
-      this.sendAction('save2', params);
+      this.sendAction('save2', params); //This sends our parameters up to the next level which is our template (in this case, index.hbs)
     }
   }
 });
