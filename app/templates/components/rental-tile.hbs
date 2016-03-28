@@ -4,8 +4,11 @@
   {{else}}
   <div class="rentalBtns">
     <button class='btn-show-image' {{action 'imageShow'}}>Show Image</button>
-    <button class='btn-delete-tile'{{action 'delete' rental}}>Delete</button>
   </div>
   {{/if}}
+  {{update-rental rental=rental update="update"}}
+  <div class="rentalBtns">
+    <button class='btn-delete-tile'{{action 'delete' rental}}>Delete</button>
+  </div>
 </li>
 <!--these are action helpers with the names of "imageHide" and "imageShow" that connect to properties of the same names in the functions of the property "isImageSHowing" of rental-tile.js -->

@@ -10,6 +10,11 @@ export default Ember.Route.extend({
       newRental.save(); //This sends the new rental to Firebase and stores it there. Fin.
       this.transitionTo('index');
     },
+    update(rental, params) {
+      debugger;
+      rental.save();
+      this.transitionTo('index');
+    },
     destroyRental(rental) {
       rental.destroyRecord();
       this.transitionTo('index');

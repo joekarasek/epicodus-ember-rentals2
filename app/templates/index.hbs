@@ -5,7 +5,7 @@
 
   <ul class="rental-listings">
     {{#each model as |rental|}}
-      <li>{{rental-tile rental=rental destroyRental="destroyRental"}}</li>
+      <li>{{rental-tile rental=rental update="update" destroyRental="destroyRental"}}</li>
     {{/each}}
   </ul>
 
