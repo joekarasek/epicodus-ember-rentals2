@@ -8,22 +8,22 @@ li {
   list-style: none;
 }
 
-button {
-  width: 50%;
-  background-color: white;
-  border: none;
-  border-radius: 8px;
-  color: black;
-  padding: 0.5rem;
-  transition: all 0.2s ease-in-out;
-  margin-bottom: 25px;
-  &:hover {
-    border-radius: 0;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-  }
-}
+// button {
+//   width: 50%;
+//   background-color: white;
+//   border: none;
+//   border-radius: 8px;
+//   color: black;
+//   padding: 0.5rem;
+//   transition: all 0.2s ease-in-out;
+//   margin-bottom: 25px;
+//   &:hover {
+//     border-radius: 0;
+//     cursor: pointer;
+//     background-color: black;
+//     color: white;
+//   }
+// }
 
 form {
   display: flex;
@@ -93,37 +93,37 @@ form {
     max-width: 100%;
     max-height: 80%;
   }
-  .rentalBtns {
-    margin-top: 3%;
-    display: flex;
-    justify-content: center;
-    .btn-show-image {
-      background-color: #62C370;
-      border: none;
-      border-radius: 8px 0 0 8px;
-      color: white;
-      padding: 0.5rem;
-      transition: all 0.1s ease-in-out;
-      &:hover {
-        // background-color: lighten(#62C370, 10%);
-        border-radius: 0;
-        cursor: pointer;
-      }
-    }
-    .btn-delete-tile {
-      background-color: #CC3363;
-      border: none;
-      border-radius: 0 8px 8px 0;
-      color: white;
-      padding: 0.5rem;
-      transition: all 0.1s ease-in-out;
-      &:hover {
-        // background-color: lighten(#CC3363, 10%);
-        border-radius: 0;
-        cursor: pointer;
-      }
-    }
-  }
+  // .rentalBtns {
+  //   margin-top: 3%;
+  //   display: flex;
+  //   justify-content: center;
+  //   .btn-show-image {
+  //     background-color: #62C370;
+  //     border: none;
+  //     border-radius: 8px 0 0 8px;
+  //     color: white;
+  //     padding: 0.5rem;
+  //     transition: all 0.1s ease-in-out;
+  //     &:hover {
+  //       // background-color: lighten(#62C370, 10%);
+  //       border-radius: 0;
+  //       cursor: pointer;
+  //     }
+  //   }
+  //   .btn-delete-tile {
+  //     background-color: #CC3363;
+  //     border: none;
+  //     border-radius: 0 8px 8px 0;
+  //     color: white;
+  //     padding: 0.5rem;
+  //     transition: all 0.1s ease-in-out;
+  //     &:hover {
+  //       // background-color: lighten(#CC3363, 10%);
+  //       border-radius: 0;
+  //       cursor: pointer;
+  //     }
+  //   }
+  // }
 }
 // ······· About ·······
 
