@@ -16,13 +16,18 @@
     "type": "Apartment",
     "bedrooms": 3,
     "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg"
-  }]
-}
-
-{ "announcements": [{
-    "image": "http://www.villablanca-costarica.com/wp-content/themes/midway/framework/extensions/timthumb/timthumb.php?src=http%3A%2F%2Fwww.villablanca-costarica.com%2Fwp-content%2Fuploads%2F2013%2F03%2FVilla-Blanca-image-slideshow2.jpg&w=1120&h=502&a=t",
-    "title": "Open House",
-    "body": "There will be an amazing open house at a mansion in Monteverde Costa Rica",
-    "date": "April, 1 2016"
-  }]
+  }],
+  "cities": [{
+    "name": "Portland",
+    "country": "USA"
+  }, {
+    "name": "Seattle",
+    "country": "USA"
+  }],
+  "announcements": [{
+      "image": "http://www.villablanca-costarica.com/wp-content/themes/midway/framework/extensions/timthumb/timthumb.php?src=http%3A%2F%2Fwww.villablanca-costarica.com%2Fwp-content%2Fuploads%2F2013%2F03%2FVilla-Blanca-image-slideshow2.jpg&w=1120&h=502&a=t",
+      "title": "Open House",
+      "body": "There will be an amazing open house at a mansion in Monteverde Costa Rica",
+      "date": "April, 1 2016"
+    }]
 }
