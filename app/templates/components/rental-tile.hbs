@@ -1,8 +1,4 @@
 <li>{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}} in {{rental.city.name}} {{/link-to}}
-  {{#if isImageShowing}}
-    <p><img src={{rental.image}} alt={{rental.type}} {{action 'imageHide'}}></p>
-  {{else}}
-    <button {{action 'imageShow'}}>Image</button>
-  {{/if}}
+  <p><img src={{rental.image}} alt={{rental.type}}></p>
 </li>
 <!--these are action helpers with the names of "imageHide" and "imageShow" that connect to properties of the same names in the functions of the property "isImageSHowing" of rental-tile.js -->
