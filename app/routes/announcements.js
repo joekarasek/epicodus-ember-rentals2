@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return this.store.findAll('announcement');
   },
   actions: {
-    save3Announcements(params) {
+    saveAnnouncements(params) {
       var newAnnouncement = this.store.createRecord('announcement', params);
       newAnnouncement.save();
       this.transitionTo('announcements');

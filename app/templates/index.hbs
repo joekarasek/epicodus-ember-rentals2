@@ -3,13 +3,15 @@
 
   We hope you find exactly what you're looking for in a place to stay.
 
+  <h2>Available Rentals</h2>
+
   <ul class="rental-listings">
     {{#each model.rentals as |rental|}}
       <li>{{rental-tile rental=rental update="update" destroyRental="destroyRental"}}</li>
     {{/each}}
   </ul>
 
-  {{new-rental save2="save3"}} <!-- We are creating a variable (save3) with the value of save2 and passing it up to the route/filename.js (in this case, index.js)-->
+  {{new-rental save="save"}} <!-- We are creating a variable (save) with the value of save and passing it up to the route/filename.js (in this case, index.js)-->
 
   <hr>
 
@@ -17,7 +19,7 @@
 
   <ul>
     {{#each model.cities as |city|}}
-      <li>{{city.name}}</li>
+      <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
     {{/each}}
   </ul>
 

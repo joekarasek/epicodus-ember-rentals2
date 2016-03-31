@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     });
   },
   actions: {
-    save3(params) { //Now we have a variable from our template (save3 of index.hbs) and params contains the contents of the form from our new-rental.js.
+    save(params) { //Now we have a variable from our template (save of index.hbs) and params contains the contents of the form from our new-rental.js.
       var newRental = this.store.createRecord('rental', params);
       newRental.save(); //This sends the new rental to Firebase and stores it there. Fin.
       this.transitionTo('index');

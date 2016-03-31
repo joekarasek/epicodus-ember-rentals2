@@ -1,0 +1,12 @@
+{ "posts": [{
+   "title": "Bloggin is fun",
+   "author": "Bloggin Joe",
+   "body": "Lorem Ipsum is the bizznass!",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+   },{
+   "title": "Bloggin is fun",
+   "author": "Bloggin Joe",
+   "body": "Lorem Ipsum is the bizznass!",
+   "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg"
+   }]
+}

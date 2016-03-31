@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     announcementFormShow(){
       this.set('addNewAnnouncement', true);
     },
-    save1Announcements() {
+    saveAnnouncements() {
       var params = {
         image: this.get('image'),
         title: this.get('title'),
@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         date: this.get('date')
       };
       this.set('addNewAnnouncement', false);
-      this.sendAction('save2Announcements', params);
+      this.sendAction('saveAnnouncements', params);
     }
   }
 });
