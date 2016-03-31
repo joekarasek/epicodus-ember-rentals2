@@ -1,6 +1,8 @@
 <div class="well city_tile">
   <ul>
-    <li>This will be a rental list</li>
-    <li>This will be a rental list</li>
+      {{#each city.rentals as |rental|}}
+        <li>{{rental-tile rental=rental update="update" destroyRental="destroyRental"}}</li>
+      {{/each}}
   </ul>
+  <button {{action 'destroyCity' city}}>Nuke this City!!!</button>
 </div>
